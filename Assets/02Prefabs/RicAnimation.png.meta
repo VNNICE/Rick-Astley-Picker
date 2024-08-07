@@ -1,0 +1,884 @@
+fileFormatVersion: 2
+guid: 2663f46fc28e6bc4f941452b0648ed44
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: RicAnimation_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2562
+        width: 498
+        height: 427
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc566a766a49a2e46b031a21a69c79ee
+      internalID: 1986996062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RicAnimation_1
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 2562
+        width: 498
+        height: 427
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81925f64c050e3040b38d862b90375bf
+      internalID: -1646252129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RicAnimation_2
+      rect:
+        serializedVersion: 2
+        x: 996
+        y: 2562
+        width: 498
+        height: 427
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b1f258d7d89d5d41988a97d4d0b602b
+      internalID: -1582869028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RicAnimation_3
+      rect:
+        serializedVersion: 2
+        x: 1494
+        y: 2562
+        width: 498
+        height: 427
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1daf6484fb11d2645b42b6a9afd97d24
+      internalID: 1183734329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RicAnimation_4
+      rect:
+        serializedVersion: 2
+        x: 1992
+        y: 2562
+        width: 498
+        height: 427
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eea2376cb45ce89428c0cad1dd390d2a
+      internalID: 94046242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RicAnimation_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2135
+        width: 498
+        height: 427
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2c6dd77abbf3f145b65edd108b1fd85
+      internalID: 107343017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RicAnimation_6
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 2135
+        width: 498
+        height: 427
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0d70cb4085c5924cb63b4d948eb1909
+      internalID: 990842346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RicAnimation_7
+      rect:
+        serializedVersion: 2
+        x: 996
+        y: 2135
+        width: 498
+        height: 427
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52dac69d9c3f99349b9530700d5ade28
+      internalID: -784980435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RicAnimation_8
+      rect:
+        serializedVersion: 2
+        x: 1494
+        y: 2135
+        width: 498
+        height: 427
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8b52ecb304137d49ac9260b49236be3
+      internalID: 366553381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RicAnimation_9
+      rect:
+        serializedVersion: 2
+        x: 1992
+        y: 2135
+        width: 498
+        height: 427
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8d9dd4ba8a448c46ab923d2b802594b
+      internalID: 1677882707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RicAnimation_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1708
+        width: 498
+        height: 427
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 369ae52d1b8c2ab41a2f794514516a1d
+      internalID: 652186194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RicAnimation_11
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 1708
+        width: 498
+        height: 427
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6024a293585dd1b4a90c41dff383aae6
+      internalID: 492823534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RicAnimation_12
+      rect:
+        serializedVersion: 2
+        x: 996
+        y: 1708
+        width: 498
+        height: 427
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed208cd007675944e9dfee724d34b48d
+      internalID: -1036705676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RicAnimation_13
+      rect:
+        serializedVersion: 2
+        x: 1494
+        y: 1708
+        width: 498
+        height: 427
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60fd4cca4be1ebf4fbc9dff1044949ba
+      internalID: 458749289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RicAnimation_14
+      rect:
+        serializedVersion: 2
+        x: 1992
+        y: 1708
+        width: 498
+        height: 427
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d611c402c1096a4e9146b7812601afc
+      internalID: -278701057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RicAnimation_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1281
+        width: 498
+        height: 427
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecb409e417706a848a49fd9696d26380
+      internalID: 135728190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RicAnimation_16
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 1281
+        width: 498
+        height: 427
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ab2e736f3ad4f64084eaf16dee77713
+      internalID: 1204162254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RicAnimation_17
+      rect:
+        serializedVersion: 2
+        x: 996
+        y: 1281
+        width: 498
+        height: 427
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cee324154a601604f8eb25c3147f63fd
+      internalID: 358223178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RicAnimation_18
+      rect:
+        serializedVersion: 2
+        x: 1494
+        y: 1281
+        width: 498
+        height: 427
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e57778b44e23004b8cb17444794ac67
+      internalID: 17036583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RicAnimation_19
+      rect:
+        serializedVersion: 2
+        x: 1992
+        y: 1281
+        width: 498
+        height: 427
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a6b7c8267ce26148a6c7a8a12c505e7
+      internalID: 1263682566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RicAnimation_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 854
+        width: 498
+        height: 427
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fe79b2f13439e04a901b43352f5091d
+      internalID: 315626731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RicAnimation_21
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 854
+        width: 498
+        height: 427
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab29825b960bdc74eae2f28694986e00
+      internalID: -806655628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RicAnimation_22
+      rect:
+        serializedVersion: 2
+        x: 996
+        y: 854
+        width: 498
+        height: 427
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b9975cd58b27664f9502fd75779b1dc
+      internalID: 1146300590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RicAnimation_23
+      rect:
+        serializedVersion: 2
+        x: 1494
+        y: 854
+        width: 498
+        height: 427
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84ee16234c8efcb4a8326ac7871167e8
+      internalID: 141780230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RicAnimation_24
+      rect:
+        serializedVersion: 2
+        x: 1992
+        y: 854
+        width: 498
+        height: 427
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1dafb994e54d8d45b7b2fcae3993a2f
+      internalID: 143895448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RicAnimation_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 427
+        width: 498
+        height: 427
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e6e032c009addd40a403c503cf7c744
+      internalID: -1765378544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RicAnimation_26
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 427
+        width: 498
+        height: 427
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 345ede765f29888479843c04068a0d26
+      internalID: -411202887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RicAnimation_27
+      rect:
+        serializedVersion: 2
+        x: 996
+        y: 427
+        width: 498
+        height: 427
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e34bb1d997a9a047b0718a6f420011b
+      internalID: 229120805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RicAnimation_28
+      rect:
+        serializedVersion: 2
+        x: 1494
+        y: 427
+        width: 498
+        height: 427
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14a3368fb80f5ff42ac4f57af619bbf9
+      internalID: 650212179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RicAnimation_29
+      rect:
+        serializedVersion: 2
+        x: 1992
+        y: 427
+        width: 498
+        height: 427
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e777d8968aa46af43acb943529fd4d10
+      internalID: -744975677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RicAnimation_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 498
+        height: 427
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37219390364cad744a4dd4288b362004
+      internalID: 1410273208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RicAnimation_31
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 0
+        width: 498
+        height: 427
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef8edfc64e3b1dd4c8b24b967dbd0243
+      internalID: -841769655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RicAnimation_32
+      rect:
+        serializedVersion: 2
+        x: 996
+        y: 0
+        width: 498
+        height: 427
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94295df53a0d36a4ea2daddf60295ced
+      internalID: 1086142838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RicAnimation_33
+      rect:
+        serializedVersion: 2
+        x: 1494
+        y: 0
+        width: 498
+        height: 427
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17f3057a24bdcc0498ff0f841f718220
+      internalID: 1184828611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RicAnimation_34
+      rect:
+        serializedVersion: 2
+        x: 1992
+        y: 0
+        width: 498
+        height: 427
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb83e9f6ba3ff08478967818da544c46
+      internalID: -215821026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      RicAnimation_0: 1986996062
+      RicAnimation_1: -1646252129
+      RicAnimation_10: 652186194
+      RicAnimation_11: 492823534
+      RicAnimation_12: -1036705676
+      RicAnimation_13: 458749289
+      RicAnimation_14: -278701057
+      RicAnimation_15: 135728190
+      RicAnimation_16: 1204162254
+      RicAnimation_17: 358223178
+      RicAnimation_18: 17036583
+      RicAnimation_19: 1263682566
+      RicAnimation_2: -1582869028
+      RicAnimation_20: 315626731
+      RicAnimation_21: -806655628
+      RicAnimation_22: 1146300590
+      RicAnimation_23: 141780230
+      RicAnimation_24: 143895448
+      RicAnimation_25: -1765378544
+      RicAnimation_26: -411202887
+      RicAnimation_27: 229120805
+      RicAnimation_28: 650212179
+      RicAnimation_29: -744975677
+      RicAnimation_3: 1183734329
+      RicAnimation_30: 1410273208
+      RicAnimation_31: -841769655
+      RicAnimation_32: 1086142838
+      RicAnimation_33: 1184828611
+      RicAnimation_34: -215821026
+      RicAnimation_4: 94046242
+      RicAnimation_5: 107343017
+      RicAnimation_6: 990842346
+      RicAnimation_7: -784980435
+      RicAnimation_8: 366553381
+      RicAnimation_9: 1677882707
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
