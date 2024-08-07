@@ -29,12 +29,12 @@ public class Scraper : MonoBehaviour
     {
         StartCoroutine(MakeASongsList());
     }
-    bool shuffleStart;
+    bool isShuffleStart;
     float shuffleTime = 0;
     bool isPause;
     private void Update()
     {
-        if (shuffleStart)
+        if (isShuffleStart)
         {
             Debug.Log(shuffleTime);
             shuffleTime += Time.deltaTime;
@@ -77,13 +77,14 @@ public class Scraper : MonoBehaviour
 
     public void ShuffleStart() 
     {
+        if (isShuffleStart) return;
         StartCoroutine(ShuffleEffect());
     }
 
     IEnumerator ShuffleEffect() 
     {
         string selectedSong = "";
-        shuffleStart = true;
+        isShuffleStart = true;
         Debug.Log("Shuffle Start");
         while (shuffleTime <= 5f) 
         {
@@ -100,7 +101,7 @@ public class Scraper : MonoBehaviour
         yield return new WaitForEndOfFrame();
 
         shuffleTime = 0;
-        shuffleStart = false;
+        isShuffleStart = false;
     }
 
     private IEnumerator MakeASongsList()
@@ -136,10 +137,6 @@ public class Scraper : MonoBehaviour
 
     public void MakeShuffledList() 
     {
-        if (!shuffleStart) 
-        {
-            return;
-        }
         DestroyChild(middleContent);
         Shuffle(shuffledList);
         for (int i = 0; i < 10; i++)
