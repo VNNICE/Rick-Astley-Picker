@@ -14,24 +14,31 @@ public class Scraper : MonoBehaviour
     [SerializeField] GameObject songTextPrefab;
     [SerializeField] GameObject selectedSongSpace;
     [SerializeField] GameObject pauseUI;
+    [SerializeField] GameObject eventUI;
     private string url = "https://en.wikipedia.org/wiki/Category:Rick_Astley_songs";
     List<string> allSongsList = new List<string>();
-    List<string> shuffledList;
+    List<string> tempShuffledList;
+    List<string> resultList;
+    string resultSong;
+
     bool isDataReady;
     bool isBindingComplete;
+    bool isShuffleStart;
+    float shuffleTime = 0;
+    bool isPause;
+
 
     void Awake()
     {
         pauseUI.SetActive(false);
+        eventUI.SetActive(false);
         StartCoroutine(GetWikipediaData(url));
     }
     private void Start()
     {
         StartCoroutine(MakeASongsList());
     }
-    bool isShuffleStart;
-    float shuffleTime = 0;
-    bool isPause;
+
     private void Update()
     {
         if (isShuffleStart)
@@ -86,16 +93,33 @@ public class Scraper : MonoBehaviour
         string selectedSong = "";
         isShuffleStart = true;
         Debug.Log("Shuffle Start");
+
+        Shuffle(tempShuffledList);
+        resultList = tempShuffledList.Take(10).ToList();
+        resultSong = resultList[Random.Range(0, 10)];
+
+        if (resultList.Contains("Never Gonna Give You Up"))
+        {
+            eventUI.SetActive(true);
+        }
+
         while (shuffleTime <= 5f) 
         {
-            MakeShuffledList();
             yield return new WaitForSeconds(0.1f);
+            ListShuffleEffect();
+        }
+
+        DestroyChild(middleContent);
+        foreach (var s in resultList) 
+        {
+            InstantiateSongText(s, middleContent);
         }
 
         while (shuffleTime <= 10f) 
         {
-            SelectSong(selectedSong);
             yield return new WaitForSeconds(0.1f);
+            SongShuffleEffect(selectedSong);
+            
         }
 
         yield return new WaitForEndOfFrame();
@@ -104,47 +128,22 @@ public class Scraper : MonoBehaviour
         isShuffleStart = false;
     }
 
-    private IEnumerator MakeASongsList()
-    {
-        Debug.Log("Waiting...");
-        yield return new WaitUntil(() => isDataReady);
-        Debug.Log("Start Make A Songs List");
-        if (isDataReady && !isBindingComplete)
-        {
-            foreach (var gettingSong in allSongsList)
-            {
-                var song = Instantiate(songTextPrefab, scrollViewContent.transform);
-                song.name = gettingSong;
-                var component = song.GetComponent<TextMeshProUGUI>();
-                component.text = gettingSong;
-            }
-            isBindingComplete = true;
-        }
-        StopCoroutine(MakeASongsList());
-        Debug.Log("Create Finished");
-    }
-    void SelectSong(string selectedSong)
+
+    void SongShuffleEffect(string selectedSong)
     {
         int random = Random.Range(0, 10);
         DestroyChild(selectedSongSpace);
-        selectedSong = shuffledList[random];
-
-        var song = Instantiate(songTextPrefab, selectedSongSpace.transform);
-        song.name = selectedSong;
-        var component = song.GetComponent<TextMeshProUGUI>();
-        component.text = selectedSong;
+        selectedSong = tempShuffledList[random];
+        InstantiateSongText(selectedSong, selectedSongSpace);
     }
 
-    public void MakeShuffledList() 
+    public void ListShuffleEffect() 
     {
         DestroyChild(middleContent);
-        Shuffle(shuffledList);
+        Shuffle(tempShuffledList);
         for (int i = 0; i < 10; i++)
         {
-            var song = Instantiate(songTextPrefab, middleContent.transform);
-            song.name = shuffledList[i];
-            var component = song.GetComponent<TextMeshProUGUI>();
-            component.text = shuffledList[i];
+            InstantiateSongText(tempShuffledList[i], middleContent);
         }
     }
     void DestroyChild(GameObject parent)
@@ -170,6 +169,30 @@ public class Scraper : MonoBehaviour
             list[j] = pickedNumber;
         }
     }
+    void InstantiateSongText(string selectedSong, GameObject parent)
+    {
+        var song = Instantiate(songTextPrefab, parent.transform);
+        song.name = selectedSong;
+        var component = song.GetComponent<TextMeshProUGUI>();
+        component.text = selectedSong;
+    }
+
+    private IEnumerator MakeASongsList()
+    {
+        Debug.Log("Waiting...");
+        yield return new WaitUntil(() => isDataReady);
+        Debug.Log("Start Make A Songs List");
+        if (isDataReady && !isBindingComplete)
+        {
+            foreach (var gettingSong in allSongsList)
+            {
+                InstantiateSongText(gettingSong, scrollViewContent);
+            }
+            isBindingComplete = true;
+        }
+        StopCoroutine(MakeASongsList());
+        Debug.Log("Create Finished");
+    }
 
     private IEnumerator GetWikipediaData(string url)
     {
@@ -188,44 +211,44 @@ public class Scraper : MonoBehaviour
                 ParseHtml(htmlContent);
             }
         }
-    }
 
-
-    private void ParseHtml(string html)
-    {
-        var htmlDoc = new HtmlDocument();
-        htmlDoc.LoadHtml(html);
-
-        var nodes = htmlDoc.DocumentNode.SelectNodes("//div[@class='mw-category-group']//ul/li/a | //div[@class='mw-category-group']//ul/li/span/a");
-        if (nodes == null)
+        void ParseHtml(string html)
         {
-            Debug.Log("No data found.");
-            return;
-        }
+            var htmlDoc = new HtmlDocument();
+            htmlDoc.LoadHtml(html);
 
-        HashSet<string> tempSongSet = new HashSet<string>();
-        foreach (var node in nodes)
-        {
-            string song = HttpUtility.HtmlDecode(node.InnerText.Trim());
-            if (song.Contains("song"))
+            var nodes = htmlDoc.DocumentNode.SelectNodes("//div[@class='mw-category-group']//ul/li/a | //div[@class='mw-category-group']//ul/li/span/a");
+            if (nodes == null)
             {
-                string remover = "(song)";
-                if (song.Contains("(Rick Astley song)")) 
+                Debug.Log("No data found.");
+                return;
+            }
+
+            HashSet<string> tempSongSet = new HashSet<string>();
+            foreach (var node in nodes)
+            {
+                string song = HttpUtility.HtmlDecode(node.InnerText.Trim());
+                if (song.Contains("song"))
                 {
-                    remover = "(Rick Astley song)";
+                    string remover = "(song)";
+                    if (song.Contains("(Rick Astley song)"))
+                    {
+                        remover = "(Rick Astley song)";
+                    }
+                    string replacedSong = song.Replace(remover, string.Empty);
+                    tempSongSet.Add(replacedSong);
                 }
-                string replacedSong = song.Replace(remover, string.Empty);
-                tempSongSet.Add(replacedSong);
+                else
+                {
+                    tempSongSet.Add(song);
+                }
             }
-            else 
-            {
-                tempSongSet.Add(song);
-            }
-        }
 
-        allSongsList = tempSongSet.ToList();
-        shuffledList = allSongsList;
-        isDataReady = true;
-        Debug.Log("Complete Data Binding");
+            allSongsList = tempSongSet.ToList();
+            tempShuffledList = allSongsList;
+            isDataReady = true;
+            Debug.Log("Complete Data Binding");
+        }
     }
 }
+
